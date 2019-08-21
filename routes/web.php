@@ -10,12 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-});
+// pages
+Route::get('/',['uses' => 'PagesController@index', 'as' => 'landing']);
+// auth
+Route::get('/login',['uses' => 'UserController@index', 'as' => 'login']);
+Route::post('/sigin',['uses' => 'UserController@login', 'as' => 'login.post']);
+Route::get('/logout', ['uses' => 'UserController@logout','as' => 'user.logout']);
+// dashboard
+Route::get('/dashboard',['uses' => 'DashboardController@index', 'as' => 'dashboard']);

@@ -43,17 +43,17 @@
     ================================================== -->
 
     <!-- JS Global -->
-    <script src="assets/plugins/jquery/jquery-1.12.4.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/plugins/jquery/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
     
     <!-- JS Plugins -->
-    <script src="assets/plugins/lightbox/dist/js/lightbox.min.js"></script>
-    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ asset('assets/plugins/lightbox/dist/js/lightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
     
     <!-- JS Custom -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/google_maps.js"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('assets/js/google_maps.js') }}"></script>
 
     <!-- Google Maps -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfwXIv2vgXzFDZRzzRH2VpbvgSzhqCCuU&callback=initMap" async defer></script>
